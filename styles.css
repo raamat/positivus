@@ -6,6 +6,17 @@
   font-style: normal;
 }
 
+/*Кастомные (пользовательские) свойства CSS (CSS-переменные)*/
+/*Custom properties (variables)*/
+:root {
+  --color-accent: #b9ff66;
+  --color-grey: #f3f3f3;
+  --color-dark: #191a23;
+  --color-ligth: #ffffff;
+
+  --border: 1px var(--color-grey);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,13 +36,24 @@ img {
   max-width: 100%;
 }
 
+.header-menu-list {
+  display: flex;
+  column-gap: 10px;
+  list-style-type: none;
+  color: var(--color-dark);
+}
+
+.header-menu-button {
+  border: var(--border);
+}
+
 .header-button {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-size: 20px;
   font-style: normal;
   color: var(--color-grey);
-  background-color: var(--color-black);
+  background-color: var(--color-dark);
   border-radius: 14px;
   border: none;
   width: 264px;
@@ -39,24 +61,10 @@ img {
 }
 
 .my-effect:hover {
-  background-color: var(--color-green);
+  background-color: var(--color-accent);
   color: var(--color-dark);
 }
 
 .header-button:hover {
   animation: change-bg 10s step-end infinite;
-}
-
-:root {
-  --color-green: #b9ff66;
-  --color-grey: #f3f3f3;
-  --color-dark: #191a23;
-  --color-black: #000000;
-}
-
-.nav-list {
-  display: flex;
-  column-gap: 10px;
-  list-style-type: none;
-  color: var(--color-dark);
 }
