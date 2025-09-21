@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+/*Убираем подчеркивание для всех ссылок*/
+a {
+  text-decoration: none;
+}
+
+/*Чтобы изображения не выходили за пределы родительского блока*/
+img {
+  max-width: 100%;
+}
+
+.header-button {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-style: normal;
+  color: var(--color-grey);
+  background-color: var(--color-black);
+  border-radius: 14px;
+  border: none;
+  width: 264px;
+  height: 68px;
+}
+
+.my-effect:hover {
+  background-color: var(--color-green);
+  color: var(--color-dark);
+}
+
+.header-button:hover {
+  animation: change-bg 10s step-end infinite;
+}
+
+:root {
+  --color-green: #b9ff66;
+  --color-grey: #f3f3f3;
+  --color-dark: #191a23;
+  --color-black: #000000;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 10px;
+  list-style-type: none;
+  color: var(--color-dark);
+}
